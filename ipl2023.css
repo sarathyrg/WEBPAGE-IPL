@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+                           /* navbar container starts */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color:#213555;
+    color:white;
+    font-weight: 600;
+    padding: 15px 100px 15px 20px;
+}
+.companyName {
+    font-size: 30px;
+}
+.box {
+    display: flex;
+    gap:25 px;
+    font-size: 20px;
+}
+.inputmenu{
+    display:none;
+}
+.box p {
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.box p:hover {
+    cursor: pointer;
+    background-color: orange;
+}
+.inputmenu:checked ~ .box{
+    left:0;
+}
+.fa-bars{
+    font-size: 2rem;
+   }
+                       /* navbar container ends */
+                       /* picturecontainer starts */
+ .picturecontainer{
+ background-color: #d8c486;
+ }
+                      /* picturecontainer ends  */
+ .teamscontainer {
+ background-color: #213555;
+ }
+
+.teamlogo{
+     display: flex;
+    flex-wrap: wrap;
+    gap:70px;
+    padding-left: 20px;
+    background-color:#213555;
+    }  
+    .captaincontainer{
+        background-color: #213555;
+    }
+    .title{
+        color:#d8c486;
+        text-decoration: dotted;
+        text-align: center;
+    }
+    .teamscaptain{
+        display: flex;
+       flex-wrap: wrap;
+       gap:70px;
+       padding-left: 20px;
+       background-color:#213555;
+       color:#d8c486;
+    }  
+
+    .teamscaptain > div {
+        text-align: center;
+    }
+    .teamscaptain  div > h5 {
+        padding:10px;
+    }
+
+    .choose{
+        background-color:#213555;
+        padding: 10px;
+        color:white;
+    }
+ 
+   .choose2{
+        display: flex;
+       gap: 50px;
+      /* padding-left: 100px; */
+      flex-wrap: wrap;
+      justify-content: center;
+     align-items: center;
+    
+      
+    }
+    .choose2 > p{
+        display: flex;
+        flex-wrap: wrap; 
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: rgb(201, 233, 149);
+    color:black;
+   
+    }
+
+    .choose2 > p:hover{
+        cursor: pointer;
+        background-color: orangered;
+        color:white;
+    }
+
+    .champions{
+background-color: #213555;
+    }
+    .num{
+        background-color: #213555;
+    }
+    .numbers{
+        display: flex;
+        flex-wrap: wrap;
+        gap:30px;
+    }
+
+    .numbers >div {
+        height: 330px;
+        width: 300px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .numbers div >p{
+        font-size: 16px;
+        padding:10px;
+    }
+    .numbers div >h5{
+        font-size: 15px;
+    }
+    .gill{
+        background-color: orange;
+    }
+    .shami{
+        background-color: purple;
+    }
+    .jaiswal{
+        background-color: pink;
+    }
+    .rashid{
+        background-color:cadetblue;
+    }
+    .faf{
+        background-color:rgb(239, 106, 106);
+    }
+    .wood{
+        background-color:rgb(114, 114, 236);
+    }
+    .points{
+        background-color: #213555;
+        text-align: center;
+        padding: 20px;
+    }
+    .photo{
+        height: 100vh;
+        width: 90%;
+        object-fit:fill;
+    }
+
+    footer{
+ 
+        display:flex;
+        flex-wrap: wrap;
+        background-color:rgb(16, 16, 16);
+        color: aliceblue;
+        padding:50px;
+        justify-content:space-around;
+        /* align-items: center; */
+        text-transform: capitalize;
+        gap:25px;
+     }
+     footer div h4{
+        text-decoration:underline;
+        font-size: 20px;
+     }
+     footer div p{
+   
+        font-size: 16px;
+     }
+
+     .copyright{
+        display: flex;
+        height: 50px;
+          background-color:black;
+          color:white;
+          justify-content: center;
+          align-items: center;
+     }
+
+@media screen and (min-width: 300px) and (max-width:1000px) {
+    .box {
+        position: fixed;
+        left: -100%;
+        padding-top: 20px;
+        background-color: rgb(156, 180, 224);
+        top: 70px;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+    .fa-bars{
+        position:absolute;
+        right:100px;
+        top:100px;
+       }
+       
+    }
+       @media screen and (min-width: 300px) and (max-width:600px) {
+        .fa-bars{
+            position:absolute;
+            right:30px;
+            top:20px;
+            text-align: center;
+           }
+           .teamlogo{
+            justify-content: center;
+          }
+          .teamscaptain{
+            justify-content: center;
+          }
+          .numbers{
+            justify-content: center;
+          }
+          footer{
+           /* text-align: center;   */
+           justify-content: left;      
+         
+}
+    }
+       @media screen and (min-width: 560px) and (max-width:1000px) {
+        .fa-bars{
+            position:absolute;
+            right:30px;
+            top:20px;
+            text-align: center;
+           }
+       }
+
+       @media screen and (min-width: 600px) and (max-width:900px) {
+        .teamlogo{
+            justify-content: center;
+          }
+          .teamscaptain{
+            justify-content: center;
+          }
+          .numbers{
+            justify-content: center;
+          }
+          footer{
+            justify-content:space-around;
+             /* gap:80px; */
+         }
+        }
+        @media screen and (min-width: 950px) and (max-width:1230px) {
+            .teamlogo{
+                justify-content: center;
+              }
+              .teamscaptain{
+                justify-content: center;
+              }
+              .numbers{
+                justify-content: center;
+              }
+            }
+      
+
+@media screen and (min-width: 1000px) and (max-width:1500px) {
+.menuicon{
+    display:none;
+}
+.numbers{
+    justify-content: center;
+  }
+
+}
